@@ -16,24 +16,19 @@ export const PageBanner: React.FC<PageBannerProps> = ({
   breadcrumbs
 }) => {
   return (
-    <div className="relative bg-night-950 text-white pt-20 pb-9 px-4 sm:px-6 lg:px-8 border-b border-stone-800 overflow-hidden">
-      {/* Decorative background effects */}
-      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#DFA68F_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-peach-400/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-olive-500/10 rounded-full blur-3xl pointer-events-none" />
-
+    <div className="relative bg-[#AAA77B] text-night-950 pt-20 pb-9 px-4 sm:px-6 lg:px-8 border-b border-olive-600/30 overflow-hidden">
       <div className="relative max-w-5xl mx-auto text-center">
         {/* Breadcrumbs */}
-        <nav className="inline-flex items-center gap-1.5 text-xs text-stone-300 mb-4 bg-night-900 border border-stone-800 px-3.5 py-1.5 rounded-full backdrop-blur-sm shadow-sm">
+        <nav className="inline-flex items-center gap-1.5 text-xs text-night-950 mb-3 bg-white/75 border border-olive-600/30 px-3.5 py-1.5 rounded-full backdrop-blur-sm shadow-sm font-medium">
           {breadcrumbs.map((crumb, idx) => (
             <React.Fragment key={idx}>
-              {idx > 0 && <ChevronRight className="w-3 h-3 text-stone-500" />}
+              {idx > 0 && <ChevronRight className="w-3 h-3 text-night-950/60" />}
               {crumb.href ? (
-                <Link to={crumb.href} className="hover:text-peach-400 transition-colors">
+                <Link to={crumb.href} className="hover:text-peach-800 transition-colors">
                   {crumb.label}
                 </Link>
               ) : (
-                <span className="text-white font-semibold">{crumb.label}</span>
+                <span className="text-night-950 font-bold">{crumb.label}</span>
               )}
             </React.Fragment>
           ))}
@@ -41,21 +36,21 @@ export const PageBanner: React.FC<PageBannerProps> = ({
 
         {/* Badge */}
         {badge && (
-          <div className="flex justify-center mb-3">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-night-900 text-peach-300 border border-peach-400/40 shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-olive-400" />
+          <div className="flex justify-center mb-2.5">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-night-950 text-stone-100 shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-peach-400" />
               {badge}
             </span>
           </div>
         )}
 
         {/* Title */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4">
+        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-night-950 mb-2.5">
           {title}
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-lg text-stone-200 max-w-2xl mx-auto leading-relaxed font-normal">
+        <p className="text-sm sm:text-base text-night-950/85 max-w-2xl mx-auto leading-relaxed font-medium">
           {subtitle}
         </p>
       </div>

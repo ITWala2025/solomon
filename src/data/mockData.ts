@@ -628,6 +628,17 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     quote: "The pay-as-you-go flexibility gives great peace of mind. We didn't have to lock into huge upfront fees. Caitriona runs the centre with such care and warmth, and the teachers genuinely care about the students.",
     achievement: "Daughter achieved Higher Merits and Distinctions across all STEM subjects."
+  },
+  {
+    id: "test-4",
+    name: "Aoife Kelly",
+    role: "Student",
+    location: "Palmerstown",
+    cycle: "Leaving Certificate",
+    subjects: ["Higher Biology", "Higher English"],
+    rating: 5,
+    quote: "Ms. Murphy and Ms. Kelly completely demystified the marking schemes for me. I learned how examiners award marks for specific definitions and essay structures rather than writing pages of waffle. It took so much stress out of 6th year.",
+    achievement: "Achieved H1 in Biology and H1 in English, 601 CAO Points (Biomedical Science UCD)."
   }
 ];
 

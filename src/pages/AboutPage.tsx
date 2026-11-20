@@ -99,16 +99,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenEnrolment }) => {
           </div>
 
           {/* CTA Banner */}
-          <div className="mt-9 bg-gradient-to-r from-night-950 via-night-900 to-night-850 rounded-3xl p-6 sm:p-9 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="mt-9 bg-[#AAA77B] text-night-950 border border-olive-600/30 rounded-3xl p-6 sm:p-9 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-2">Experience the Difference with a Trial Session</h3>
-              <p className="text-sm text-stone-300 max-w-xl">
+              <h3 className="text-2xl sm:text-3xl font-extrabold mb-2">Experience the Difference with a Trial Session</h3>
+              <p className="text-sm text-night-950/85 max-w-xl font-medium">
                 Attend an initial trial class in your subject to experience our examiner-led approach first-hand.
               </p>
             </div>
             <button
               onClick={onOpenEnrolment}
-              className="px-7 py-3.5 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-md flex-shrink-0"
+              className="px-7 py-3.5 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-md flex-shrink-0 border border-peach-500/50"
             >
               Enrol / Reserve a Class
             </button>

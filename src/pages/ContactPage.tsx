@@ -82,16 +82,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnrolment }) => 
           </div>
 
           {/* Enrolment Trigger Card */}
-          <div className="bg-gradient-to-r from-night-950 via-night-900 to-night-850 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="bg-[#AAA77B] text-night-950 border border-olive-600/30 rounded-3xl p-6 sm:p-9 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl sm:text-3xl font-extrabold mb-2">Ready to Secure Your Place?</h3>
-              <p className="text-xs sm:text-sm text-stone-300 max-w-xl leading-relaxed">
+              <p className="text-xs sm:text-sm text-night-950/85 max-w-xl leading-relaxed font-medium">
                 Use our 3-step online enrolment wizard to select subjects, preview your weekly fee with bundle discounts, and fast-track registration.
               </p>
             </div>
             <button
               onClick={onOpenEnrolment}
-              className="px-8 py-3.5 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-md flex-shrink-0"
+              className="px-8 py-3.5 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-md flex-shrink-0 border border-peach-500/50"
             >
               Open Enrolment Form
             </button>
