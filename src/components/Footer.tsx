@@ -103,7 +103,7 @@ export const Footer: React.FC = () => {
 
           <div className="flex items-center gap-2 text-night-950 font-semibold">
             <ShieldCheck className="w-4 h-4 text-night-950 flex-shrink-0" />
-            <span>State Examinations Commission (SEC) syllabus-aligned curriculum.</span>
+            <span>State Examinations Commission (SEC) syllabus aligned curriculum.</span>
           </div>
 
           <div>
