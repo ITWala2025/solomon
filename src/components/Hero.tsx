@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenEnrolment }) => {
   return (
-    <section className="relative overflow-hidden bg-[#AAA77B] text-night-950 pt-20 pb-11 lg:pt-24 lg:pb-14 border-b border-olive-600/30">
+    <section className="relative overflow-hidden bg-[#AAA77B] text-night-950 pt-24 pb-10 sm:pt-28 sm:pb-11 lg:pt-28 lg:pb-14 border-b border-olive-600/30">
       {/* Seamless Blended Background Image on the Right */}
       <div className="absolute right-0 top-0 bottom-0 w-full lg:w-7/12 pointer-events-none select-none overflow-hidden">
         <img

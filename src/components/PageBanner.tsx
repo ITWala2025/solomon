@@ -16,7 +16,7 @@ export const PageBanner: React.FC<PageBannerProps> = ({
   breadcrumbs
 }) => {
   return (
-    <div className="relative bg-[#AAA77B] text-night-950 pt-20 pb-9 px-4 sm:px-6 lg:px-8 border-b border-olive-600/30 overflow-hidden">
+    <div className="relative bg-[#AAA77B] text-night-950 pt-24 pb-9 sm:pt-28 px-4 sm:px-6 lg:px-8 border-b border-olive-600/30 overflow-hidden">
       <div className="relative max-w-5xl mx-auto text-center">
         {/* Breadcrumbs */}
         <nav className="inline-flex items-center gap-1.5 text-xs text-night-950 mb-3 bg-white/75 border border-olive-600/30 px-3.5 py-1.5 rounded-full backdrop-blur-sm shadow-sm font-medium">
