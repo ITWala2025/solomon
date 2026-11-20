@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, X, Send, Bot, User, Sparkles, Phone, ArrowRight } from 'lucide-react';
+import { MessageSquare, X, Send, Bot, Sparkles } from 'lucide-react';
 
 interface ChatMessage {
   id: string;
@@ -41,7 +41,6 @@ export const SolomonGuideChat: React.FC = () => {
     setMessages(prev => [...prev, userMsg]);
     if (!textToSend) setInput('');
 
-    // Simulated Intelligent Response logic based on Agents.md specs
     setTimeout(() => {
       let botResponse = "Thank you for asking! For direct enquiries, Caitriona Hayes is available on 01 6284171 or WhatsApp at 087 2745234.";
       const lower = query.toLowerCase();
@@ -55,7 +54,7 @@ export const SolomonGuideChat: React.FC = () => {
       } else if (lower.includes('day') || lower.includes('when') || lower.includes('time') || lower.includes('schedule')) {
         botResponse = "We operate on Wednesday Evenings (5:30 PM to 9:00 PM) and Saturday Mornings/Afternoons (9:30 AM to 2:15 PM). You can explore our live timetable above!";
       } else if (lower.includes('trial') || lower.includes('enrol') || lower.includes('book')) {
-        botResponse = "Students are welcome to attend a trial class in their chosen subject! You can click the 'Enrol / Reserve Seat' button at the top of the page, or message Caitriona directly on WhatsApp.";
+        botResponse = "Students are welcome to attend a trial class in their chosen subject! You can click the 'Enrol Now' button at the top of the page, or message Caitriona directly on WhatsApp.";
       }
 
       const replyMsg: ChatMessage = {
@@ -74,14 +73,14 @@ export const SolomonGuideChat: React.FC = () => {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="group flex items-center gap-2.5 px-4 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full shadow-2xl hover:shadow-emerald-500/40 hover:scale-105 transition-all"
+          className="group flex items-center gap-2.5 px-4 py-3 bg-gradient-to-r from-crimson-800 to-crimson-900 text-white rounded-full shadow-2xl hover:shadow-crimson-900/40 hover:scale-105 transition-all"
           aria-label="Open Admissions Assistant"
         >
           <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
             <Bot className="w-4 h-4 text-white" />
           </div>
           <span className="text-xs font-bold hidden sm:inline">Ask Solomon Guide (AI)</span>
-          <span className="w-2.5 h-2.5 rounded-full bg-emerald-300 animate-ping"></span>
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
         </button>
       )}
 
@@ -89,22 +88,22 @@ export const SolomonGuideChat: React.FC = () => {
       {isOpen && (
         <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl w-80 sm:w-96 overflow-hidden flex flex-col h-[480px] animate-in fade-in slide-in-from-bottom-4 duration-200">
           {/* Header */}
-          <div className="bg-gradient-to-r from-brand-950 via-brand-900 to-brand-800 text-white p-4 flex items-center justify-between">
+          <div className="bg-gradient-to-r from-crimson-950 via-crimson-900 to-crimson-850 text-white p-4 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+              <div className="w-8 h-8 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-amber-300">
                 <Bot className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="text-sm font-bold leading-tight">Solomon Guide</h4>
-                <span className="text-[10px] text-emerald-400 font-medium flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span className="text-[10px] text-amber-300 font-medium flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
                   Admissions AI • Online 24/7
                 </span>
               </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-1 rounded-lg hover:bg-white/10 text-slate-300 hover:text-white"
+              className="p-1 rounded-full hover:bg-white/10 text-slate-300 hover:text-white"
             >
               <X className="w-5 h-5" />
             </button>
@@ -118,14 +117,14 @@ export const SolomonGuideChat: React.FC = () => {
                 className={`flex gap-2 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 {msg.sender === 'bot' && (
-                  <div className="w-6 h-6 rounded-full bg-brand-900 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-crimson-900 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot className="w-3.5 h-3.5" />
                   </div>
                 )}
                 <div
                   className={`p-3 rounded-2xl max-w-[80%] leading-relaxed ${
                     msg.sender === 'user'
-                      ? 'bg-emerald-600 text-white rounded-br-none shadow-sm'
+                      ? 'bg-crimson-800 text-white rounded-br-none shadow-sm'
                       : 'bg-white text-slate-800 border border-slate-200/80 rounded-bl-none shadow-sm'
                   }`}
                 >
@@ -142,7 +141,7 @@ export const SolomonGuideChat: React.FC = () => {
                 key={i}
                 type="button"
                 onClick={() => handleSend(q)}
-                className="text-[11px] px-2.5 py-1 rounded-full bg-slate-100 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200/80 transition flex-shrink-0"
+                className="text-[11px] px-2.5 py-1 rounded-full bg-slate-100 hover:bg-crimson-50 text-slate-700 hover:text-crimson-800 border border-slate-200/80 transition flex-shrink-0"
               >
                 {q}
               </button>
@@ -157,11 +156,11 @@ export const SolomonGuideChat: React.FC = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-              className="flex-1 px-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-1 focus:ring-emerald-500"
+              className="flex-1 px-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-full focus:outline-none focus:ring-1 focus:ring-crimson-700"
             />
             <button
               onClick={() => handleSend()}
-              className="p-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white"
+              className="p-2 rounded-full bg-crimson-800 hover:bg-crimson-900 text-white"
             >
               <Send className="w-4 h-4" />
             </button>

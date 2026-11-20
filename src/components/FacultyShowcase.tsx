@@ -12,7 +12,7 @@ export const FacultyShowcase: React.FC = () => {
             <Award className="w-3.5 h-3.5 text-amber-600" />
             Dedicated Educators
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-900 tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
             Our Teaching Staff: Hand Picked, Experienced & All Past or Present Examiners
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -25,7 +25,7 @@ export const FacultyShowcase: React.FC = () => {
           {TEACHERS.map((teacher) => (
             <div
               key={teacher.id}
-              className="bg-white rounded-3xl border border-slate-200 p-7 shadow-sm hover:shadow-card hover:border-emerald-500/40 transition-all flex flex-col justify-between group"
+              className="bg-white rounded-3xl border border-slate-200 p-7 shadow-sm hover:shadow-card hover:border-crimson-600/40 transition-all flex flex-col justify-between group"
             >
               <div>
                 {/* Avatar and Examiner Pill */}
@@ -33,15 +33,15 @@ export const FacultyShowcase: React.FC = () => {
                   <img
                     src={teacher.avatarUrl}
                     alt={teacher.fullName}
-                    className="w-16 h-16 rounded-2xl object-cover border-2 border-emerald-500/30 group-hover:border-emerald-500 transition-colors"
+                    className="w-16 h-16 rounded-2xl object-cover border-2 border-crimson-800/30 group-hover:border-crimson-700 transition-colors shadow-sm"
                   />
                   <div>
-                    <h3 className="text-lg font-bold text-brand-900 group-hover:text-emerald-700 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-crimson-800 transition-colors">
                       {teacher.fullName}
                     </h3>
                     <p className="text-xs text-slate-500 font-medium">{teacher.role}</p>
-                    <div className="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
-                      <Award className="w-3 h-3 text-amber-500" />
+                    <div className="inline-flex items-center gap-1 mt-1 text-[11px] font-semibold text-amber-900 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
+                      <Award className="w-3 h-3 text-amber-600" />
                       <span>{teacher.yearsExperience}+ Years • SEC Examiner</span>
                     </div>
                   </div>
@@ -62,7 +62,7 @@ export const FacultyShowcase: React.FC = () => {
                   {teacher.subjects.map((subj, idx) => (
                     <span
                       key={idx}
-                      className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200/80"
+                      className="text-xs font-semibold px-2.5 py-1 rounded-full bg-crimson-50 text-crimson-800 border border-crimson-200/60"
                     >
                       {subj}
                     </span>

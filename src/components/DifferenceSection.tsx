@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, X, ShieldAlert, Sparkles, HeartHandshake } from 'lucide-react';
+import { Check, X, Sparkles, HeartHandshake, ShieldCheck } from 'lucide-react';
 
 export const DifferenceSection: React.FC = () => {
   return (
@@ -7,11 +7,11 @@ export const DifferenceSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson-100 text-crimson-900 text-xs font-bold uppercase tracking-wider mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-crimson-700" />
             The Solomon Grinds Advantage
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-900 tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
             Why West Dublin Parents Choose Solomon Over City Centre Grind Schools
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -22,21 +22,21 @@ export const DifferenceSection: React.FC = () => {
         {/* Head-to-Head Comparison Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Competitor: The City Centre Grind Factory */}
-          <div className="bg-white rounded-3xl p-8 border border-red-200 shadow-sm flex flex-col justify-between">
+          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-slate-100 mb-6">
                 <div>
-                  <span className="text-xs font-bold text-red-600 uppercase tracking-widest">Typical Alternative</span>
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Typical Alternative</span>
                   <h3 className="text-xl font-bold text-slate-900">City Centre Grind Institutes</h3>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-red-50 text-red-500 flex items-center justify-center font-bold">
+                <div className="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center font-bold">
                   <X className="w-5 h-5" />
                 </div>
               </div>
 
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <X className="w-3.5 h-3.5" />
                   </div>
                   <div>
@@ -46,7 +46,7 @@ export const DifferenceSection: React.FC = () => {
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <X className="w-3.5 h-3.5" />
                   </div>
                   <div>
@@ -56,7 +56,7 @@ export const DifferenceSection: React.FC = () => {
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <X className="w-3.5 h-3.5" />
                   </div>
                   <div>
@@ -66,7 +66,7 @@ export const DifferenceSection: React.FC = () => {
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <X className="w-3.5 h-3.5" />
                   </div>
                   <div>
@@ -83,67 +83,67 @@ export const DifferenceSection: React.FC = () => {
           </div>
 
           {/* Winner: Solomon Grinds */}
-          <div className="bg-gradient-to-b from-brand-900 to-brand-950 text-white rounded-3xl p-8 border-2 border-emerald-500 shadow-xl flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-emerald-500 text-brand-950 text-xs font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl">
+          <div className="bg-gradient-to-b from-crimson-900 to-crimson-950 text-white rounded-3xl p-8 border-2 border-crimson-700 shadow-xl flex flex-col justify-between relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-amber-400 text-crimson-950 text-xs font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl">
               The Solomon Standard
             </div>
 
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
                 <div>
-                  <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Our Promise</span>
+                  <span className="text-xs font-bold text-amber-300 uppercase tracking-widest">Our Promise</span>
                   <h3 className="text-2xl font-extrabold text-white">The Solomon Grinds Difference</h3>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
-                  <Check className="w-6 h-6 text-emerald-400" />
+                <div className="w-10 h-10 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center">
+                  <Check className="w-6 h-6" />
                 </div>
               </div>
 
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-400 font-bold" />
+                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">Strictly Capped Small Cohorts (6–10 Students)</strong>
-                    <span className="text-xs text-slate-300">Intimate class environment where the teacher knows your student and diagnoses weaknesses.</span>
+                    <span className="text-xs text-crimson-100">Intimate class environment where the teacher knows your student and diagnoses weaknesses.</span>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-400 font-bold" />
+                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">100% Active or Past SEC Examiners</strong>
-                    <span className="text-xs text-slate-300">Teaching marking scheme nuances, exact keyword mark allocations, and exam time-management.</span>
+                    <span className="text-xs text-crimson-100">Teaching marking scheme nuances, exact keyword mark allocations, and exam time-management.</span>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-400 font-bold" />
+                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">Safe, Convenient Suburban Location</strong>
-                    <span className="text-xs text-slate-300">Scoil Áine Naofa, Newcastle Road, Lucan (opposite SuperValu). Free on-site parking and bus links.</span>
+                    <span className="text-xs text-crimson-100">Scoil Áine Naofa, Newcastle Road, Lucan (opposite SuperValu). Free on-site parking and bus links.</span>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-emerald-400 font-bold" />
+                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">Flexible €20 Pay-As-You-Go with Multi-Subject Savings</strong>
-                    <span className="text-xs text-slate-300">Pay weekly with total peace of mind. 2 subjects = €38/wk; 3 subjects = €55/wk (save €150/year).</span>
+                    <span className="text-xs text-crimson-100">Pay weekly with total peace of mind. 2 subjects = €38/wk; 3 subjects = €55/wk (save €150/year).</span>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-white/10 flex items-center gap-2 text-xs text-emerald-400 font-semibold">
-              <HeartHandshake className="w-4 h-4 text-emerald-400" />
+            <div className="mt-8 pt-4 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300 font-semibold">
+              <HeartHandshake className="w-4 h-4 text-amber-400" />
               <span>Proven track record of top CAO points and H1/H2 results for over 25 years.</span>
             </div>
           </div>
