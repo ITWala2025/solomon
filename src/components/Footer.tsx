@@ -97,26 +97,26 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom copyright and SEC disclaimer */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-night-950/80 font-medium">
-          <p>© {new Date().getFullYear()} Solomon Grinds. All rights reserved. Operating in Lucan, Co. Dublin.</p>
+        {/* Bottom copyright, SEC disclaimer, and Designed and Developed by ITwala in the same row */}
+        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-night-950/85 font-medium">
+          <p>© {new Date().getFullYear()} Solomon Grinds. All rights reserved.</p>
+
           <div className="flex items-center gap-2 text-night-950 font-semibold">
-            <ShieldCheck className="w-4 h-4 text-night-950" />
+            <ShieldCheck className="w-4 h-4 text-night-950 flex-shrink-0" />
             <span>State Examinations Commission (SEC) syllabus-aligned curriculum.</span>
           </div>
-        </div>
 
-        {/* Designed & Developed Credit */}
-        <div className="pt-3 mt-3 border-t border-night-950/10 text-center text-[11px] sm:text-xs text-night-950/75">
-          <span>Designed & Developed by </span>
-          <a
-            href="https://www.it-wala.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-bold text-night-950 hover:text-white transition-colors underline underline-offset-2"
-          >
-            www.it-wala.com
-          </a>
+          <div>
+            <span>Designed and Developed by </span>
+            <a
+              href="https://www.it-wala.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-night-950 hover:text-white transition-colors underline underline-offset-2"
+            >
+              ITwala
+            </a>
+          </div>
         </div>
       </div>
     </footer>
