@@ -25,9 +25,9 @@ export const FeesPage: React.FC<FeesPageProps> = ({ onSelectBundle, onOpenEnrolm
       <PricingCalculator onOpenEnrolmentWithBundle={onSelectBundle} />
 
       {/* Detailed Tuition Breakdown Table */}
-      <section className="py-16 bg-white border-b border-slate-200">
+      <section className="py-9 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="text-center max-w-2xl mx-auto mb-6">
             <h3 className="text-2xl font-bold text-slate-900 mb-2">Tuition Rates at a Glance</h3>
             <p className="text-xs sm:text-sm text-slate-600">
               Pay weekly in person or online. No upfront full-semester commitments required.

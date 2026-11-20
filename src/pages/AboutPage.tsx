@@ -25,9 +25,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenEnrolment }) => {
       <DifferenceSection />
 
       {/* Deep Dive Pillars */}
-      <section className="py-20 bg-white">
+      <section className="py-11 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-9">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
               Built Specifically for Irish Secondary Students
             </h2>
@@ -99,7 +99,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenEnrolment }) => {
           </div>
 
           {/* CTA Banner */}
-          <div className="mt-16 bg-gradient-to-r from-night-950 via-night-900 to-night-850 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="mt-9 bg-gradient-to-r from-night-950 via-night-900 to-night-850 rounded-3xl p-6 sm:p-9 text-white flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-2">Experience the Difference with a Trial Session</h3>
               <p className="text-sm text-stone-300 max-w-xl">

@@ -24,9 +24,9 @@ export const SpecializedPage: React.FC<SpecializedPageProps> = ({ onOpenEnrolmen
       <SpecializedHubs onOpenEnrolment={onOpenEnrolment} />
 
       {/* Intensive Details Breakdown */}
-      <section className="py-16 bg-white border-t border-slate-200">
+      <section className="py-9 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Easter Revision Details */}
             <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200">
               <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-1">

@@ -24,9 +24,9 @@ export const FacultyPage: React.FC<FacultyPageProps> = ({ onOpenEnrolment }) => 
       <FacultyShowcase />
 
       {/* Why Learning From State Examiners Matters */}
-      <section className="py-16 bg-white border-t border-slate-200">
+      <section className="py-9 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-center max-w-3xl mx-auto mb-7">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
               The Examiner Advantage: What It Means For Your Results
             </h3>

@@ -4,9 +4,9 @@ import { GraduationCap, MapPin, Phone, Mail, MessageSquare, Clock, ShieldCheck }
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-night-950 text-white border-t border-stone-800 pt-16 pb-12">
+    <footer className="bg-night-950 text-white border-t border-stone-800 pt-9 pb-7">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-stone-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-7 border-b border-stone-800">
           {/* Col 1: Brand & Identity */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-3 group">

@@ -10,10 +10,10 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faqs" className="py-20 bg-white">
+    <section id="faqs" className="py-11 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider mb-3">
             <HelpCircle className="w-3.5 h-3.5 text-slate-600" />
             Got Questions?

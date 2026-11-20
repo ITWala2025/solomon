@@ -16,7 +16,7 @@ export const PageBanner: React.FC<PageBannerProps> = ({
   breadcrumbs
 }) => {
   return (
-    <div className="relative bg-night-950 text-white pt-28 pb-16 px-4 sm:px-6 lg:px-8 border-b border-stone-800 overflow-hidden">
+    <div className="relative bg-night-950 text-white pt-20 pb-9 px-4 sm:px-6 lg:px-8 border-b border-stone-800 overflow-hidden">
       {/* Decorative background effects */}
       <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#DFA68F_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-peach-400/10 rounded-full blur-3xl pointer-events-none" />

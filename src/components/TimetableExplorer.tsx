@@ -29,10 +29,10 @@ export const TimetableExplorer: React.FC<TimetableExplorerProps> = ({ onSelectSl
   }, [selectedCycle, selectedLevel, selectedDay, searchQuery]);
 
   return (
-    <section id="timetable" className="py-16 bg-white">
+    <section id="timetable" className="py-9 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        <div className="text-center max-w-3xl mx-auto mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-3">
             <Calendar className="w-3.5 h-3.5 text-peach-600" />
             Active Class Schedule

@@ -4,10 +4,10 @@ import { Award, GraduationCap, CheckCircle, Clock } from 'lucide-react';
 
 export const FacultyShowcase: React.FC = () => {
   return (
-    <section id="faculty" className="py-20 bg-slate-50 border-b border-slate-200">
+    <section id="faculty" className="py-11 bg-slate-50 border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-9">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-3">
             <Award className="w-3.5 h-3.5 text-peach-600" />
             Dedicated Educators

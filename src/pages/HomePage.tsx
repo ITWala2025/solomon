@@ -5,7 +5,7 @@ import { TimetableSlot } from '../types';
 import { SUBJECTS, TEACHERS, TESTIMONIALS } from '../data/mockData';
 import {
   ArrowRight, Award, Users, MapPin, Wallet, Star, Quote,
-  Calendar, Phone, MessageSquare, CheckCircle2, Sparkles
+  Calendar, Phone, CheckCircle2, Sparkles
 } from 'lucide-react';
 
 interface HomePageProps {
@@ -25,17 +25,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenEnrolment }) => {
       <Hero onOpenEnrolment={onOpenEnrolment} />
 
       {/* Quick Stats Banner */}
-      <section className="py-10 bg-white border-b border-slate-100">
+      <section className="py-6 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
             {[
               { value: '25+', label: 'Years Serving Lucan & West Dublin', color: 'text-peach-600' },
-              { value: '100%', label: 'SEC Examiner Teaching Staff', color: 'text-olive-600' },
+              { value: '100%', label: 'SEC Examiner Teaching Staff', color: 'text-olive-700' },
               { value: '€20', label: 'Per Class, Pay-As-You-Go', color: 'text-peach-600' },
-              { value: '6–10', label: 'Students Max Per Class', color: 'text-olive-600' },
+              { value: '6–10', label: 'Students Max Per Class', color: 'text-olive-700' },
             ].map((stat, i) => (
-              <div key={i} className="p-4">
-                <div className={`text-3xl sm:text-4xl font-extrabold font-mono mb-1 ${stat.color}`}>{stat.value}</div>
+              <div key={i} className="p-3">
+                <div className={`text-2xl sm:text-3xl font-extrabold font-mono mb-0.5 ${stat.color}`}>{stat.value}</div>
                 <div className="text-xs sm:text-sm text-slate-500 font-medium leading-snug">{stat.label}</div>
               </div>
             ))}
@@ -44,27 +44,27 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenEnrolment }) => {
       </section>
 
       {/* Popular Subjects Teaser */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200">
+      <section className="py-9 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-2">
                 <Calendar className="w-3.5 h-3.5 text-peach-600" />
                 Leaving Cert & Junior Cycle
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
                 Popular Subjects & Classes
               </h2>
-              <p className="text-sm text-slate-500 mt-1">
+              <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
                 Wednesday Evenings & Saturday Mornings at Scoil Áine Naofa, Lucan.
               </p>
             </div>
             <Link
               to="/timetable"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-sm flex-shrink-0"
+              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-sm flex-shrink-0"
             >
               <span>View Full Timetable</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
@@ -72,15 +72,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenEnrolment }) => {
             {popularSubjects.map((subject) => (
               <div
                 key={subject.id}
-                className="bg-white rounded-2xl border border-slate-200 p-4 hover:border-peach-400/60 hover:shadow-sm transition-all group"
+                className="bg-white rounded-2xl border border-slate-200 p-3.5 hover:border-peach-400/60 hover:shadow-sm transition-all group"
               >
-                <div className="flex items-start justify-between gap-2 mb-2">
-                  <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-peach-50 text-peach-800 border border-peach-200/60">
+                <div className="flex items-start justify-between gap-2 mb-1.5">
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-peach-50 text-peach-800 border border-peach-200/60">
                     {subject.cycle === 'Leaving Certificate' ? 'LC' : subject.cycle === 'Junior Cycle' ? 'JC' : '5th'}
                   </span>
                   <span className="text-[10px] font-semibold text-slate-400">{subject.levels.join('/')}</span>
                 </div>
-                <h4 className="text-sm font-bold text-slate-900 group-hover:text-peach-700 transition-colors leading-snug">
+                <h4 className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-peach-700 transition-colors leading-snug">
                   {subject.title}
                 </h4>
               </div>
@@ -90,42 +90,42 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenEnrolment }) => {
       </section>
 
       {/* Faculty Teaser */}
-      <section className="py-16 bg-white border-b border-slate-200">
+      <section className="py-9 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-olive-100 text-olive-900 text-xs font-bold uppercase tracking-wider mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-olive-100 text-olive-900 text-xs font-bold uppercase tracking-wider mb-2">
                 <Award className="w-3.5 h-3.5 text-olive-600" />
                 Examiner-Led Tuition
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
                 Hand-Picked Examiner Teaching Staff
               </h2>
-              <p className="text-sm text-slate-500 mt-1">
+              <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
                 Every teacher is a past or present State Examinations Commission (SEC) examiner.
               </p>
             </div>
             <Link
               to="/faculty"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-full transition-all flex-shrink-0"
+              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-full transition-all flex-shrink-0"
             >
               <span>Meet All Faculty</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {featuredTeachers.map((teacher) => (
-              <div key={teacher.id} className="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-200 hover:border-olive-300 transition-all">
+              <div key={teacher.id} className="flex items-center gap-3.5 p-4 bg-slate-50 rounded-2xl border border-slate-200 hover:border-olive-300 transition-all">
                 <img
                   src={teacher.avatarUrl}
                   alt={teacher.fullName}
-                  className="w-14 h-14 rounded-xl object-cover border-2 border-olive-200 flex-shrink-0"
+                  className="w-12 h-12 rounded-xl object-cover border-2 border-olive-200 flex-shrink-0"
                 />
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">{teacher.fullName}</h4>
                   <p className="text-xs text-slate-500">{teacher.role}</p>
-                  <div className="inline-flex items-center gap-1 mt-1 text-[10px] font-semibold text-olive-800 bg-olive-50 px-2 py-0.5 rounded-md border border-olive-200">
+                  <div className="inline-flex items-center gap-1 mt-0.5 text-[10px] font-semibold text-olive-800 bg-olive-50 px-2 py-0.5 rounded-md border border-olive-200">
                     <Award className="w-3 h-3 text-olive-600" />
                     <span>SEC Examiner</span>
                   </div>
@@ -137,99 +137,99 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenEnrolment }) => {
       </section>
 
       {/* Featured Testimonial */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200">
+      <section className="py-9 bg-slate-50 border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-olive-100 text-olive-900 text-xs font-bold uppercase tracking-wider mb-3">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-olive-100 text-olive-900 text-xs font-bold uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5 text-olive-600" />
               Real Results
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
               What Local Families Say
             </h2>
           </div>
 
-          <div className="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-sm relative">
-            <Quote className="w-10 h-10 text-peach-200 mb-4" />
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed italic mb-6">
+          <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm relative">
+            <Quote className="w-8 h-8 text-peach-200 mb-3" />
+            <p className="text-sm sm:text-base text-slate-700 leading-relaxed italic mb-4">
               "{featuredTestimonial.quote}"
             </p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-slate-100">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-4 border-t border-slate-100">
               <div>
-                <div className="flex items-center gap-1 text-amber-400 mb-1">
+                <div className="flex items-center gap-1 text-amber-400 mb-0.5">
                   {[...Array(featuredTestimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
                   ))}
                 </div>
-                <strong className="text-slate-900 font-bold block">{featuredTestimonial.name}</strong>
+                <strong className="text-slate-900 font-bold block text-sm">{featuredTestimonial.name}</strong>
                 <span className="text-xs text-slate-500">{featuredTestimonial.role} • {featuredTestimonial.location}</span>
               </div>
-              <div className="p-3 bg-olive-50 border border-olive-200/80 rounded-xl text-xs font-semibold text-olive-900 max-w-xs">
-                <Award className="w-4 h-4 text-olive-600 inline mr-1" />
+              <div className="p-2.5 bg-olive-50 border border-olive-200/80 rounded-xl text-xs font-semibold text-olive-900 max-w-xs">
+                <Award className="w-3.5 h-3.5 text-olive-600 inline mr-1" />
                 {featuredTestimonial.achievement}
               </div>
             </div>
           </div>
 
-          <div className="mt-6 text-center">
+          <div className="mt-4 text-center">
             <Link
               to="/about"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-peach-600 hover:text-peach-700 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-peach-600 hover:text-peach-700 transition-colors"
             >
               <span>Read more about our approach</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Location Mini-Card */}
-      <section className="py-16 bg-white border-b border-slate-200">
+      <section className="py-9 bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-night-950 text-white rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex items-start gap-5">
-              <div className="w-14 h-14 rounded-2xl bg-peach-400/20 border border-peach-400/30 flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-7 h-7 text-peach-400" />
+          <div className="bg-night-950 text-white rounded-3xl p-6 sm:p-7 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-peach-400/20 border border-peach-400/30 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-6 h-6 text-peach-400" />
               </div>
               <div>
-                <h3 className="text-xl font-extrabold text-white mb-1">Scoil Áine Naofa, Lucan</h3>
-                <p className="text-sm text-stone-300 leading-relaxed">
+                <h3 className="text-lg font-extrabold text-white mb-0.5">Scoil Áine Naofa, Lucan</h3>
+                <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
                   Newcastle Road, Lucan, K78 PF65 — directly opposite SuperValu, just off the N4.<br />
                   <span className="text-olive-400 font-medium">Free on-site parking. Dublin Bus C1, C2, C4, L51–L53.</span>
                 </p>
-                <p className="text-xs text-stone-400 mt-2">
+                <p className="text-[11px] text-stone-400 mt-1.5">
                   Minutes from Celbridge (10 min), Leixlip (8 min), Palmerstown (7 min), Maynooth (15 min).
                 </p>
               </div>
             </div>
             <Link
               to="/location"
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-md flex-shrink-0 whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-md flex-shrink-0 whitespace-nowrap"
             >
               <span>Get Directions</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Final CTA Banner */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-9 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-3">
             <CheckCircle2 className="w-3.5 h-3.5 text-peach-600" />
             Free Trial Class Available
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3">
             Ready to Experience the Solomon Grinds Difference?
           </h2>
-          <p className="text-base text-slate-600 mb-8 max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-slate-600 mb-6 max-w-xl mx-auto">
             Enrol online in under 2 minutes, or message Caitriona Hayes directly to discuss the right subjects and timetable for your child.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <button
               onClick={onOpenEnrolment}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-extrabold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full shadow-xl shadow-peach-400/20 transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-xs sm:text-sm font-extrabold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full shadow-lg shadow-peach-400/20 transition-all"
             >
               <Sparkles className="w-4 h-4" />
               <span>Enrol / Reserve a Class</span>
@@ -238,7 +238,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenEnrolment }) => {
               href="https://wa.me/353872745234?text=Hi%20Caitriona,%20I'm%20interested%20in%20grinds%20at%20Solomon%20Grinds%20Lucan."
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-[#25D366] hover:bg-[#20ba59] rounded-full shadow-md transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-xs sm:text-sm font-bold text-white bg-[#25D366] hover:bg-[#20ba59] rounded-full shadow-md transition-all"
             >
               <svg
                 className="w-4 h-4 fill-current text-white flex-shrink-0"
@@ -252,9 +252,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenEnrolment }) => {
             </a>
             <a
               href="tel:016284171"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-full shadow-sm transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-xs sm:text-sm font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-full shadow-sm transition-all"
             >
-              <Phone className="w-4 h-4" />
+              <Phone className="w-3.5 h-3.5" />
               <span>01 6284171</span>
             </a>
           </div>
