@@ -77,7 +77,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrolment }) => {
               { value: '6–10', label: 'Strict Class Size Cap' },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col">
-                <div className="text-3xl sm:text-4xl font-extrabold font-mono text-night-950 tracking-tight mb-0.5">
+                <div className="text-3xl sm:text-4xl font-extrabold font-sans text-night-950 tracking-tight mb-0.5">
                   {stat.value}
                 </div>
                 <div className="text-xs sm:text-sm text-night-950/90 font-bold leading-snug">
