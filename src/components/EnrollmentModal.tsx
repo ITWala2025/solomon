@@ -110,9 +110,9 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
     <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
       <div className="relative bg-white rounded-3xl max-w-2xl w-full border border-slate-200 shadow-2xl overflow-hidden my-8">
         {/* Modal Top Bar */}
-        <div className="bg-gradient-to-r from-crimson-950 via-crimson-900 to-crimson-850 text-white px-6 py-5 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-night-950 via-night-900 to-night-850 text-white px-6 py-5 flex items-center justify-between">
           <div>
-            <span className="text-[11px] font-bold uppercase tracking-wider text-amber-300 block">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-peach-300 block">
               Step {step} of 3
             </span>
             <h3 className="text-lg font-bold text-white">
@@ -145,7 +145,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     placeholder="e.g. Sarah O'Connor"
                     value={studentName}
                     onChange={(e) => setStudentName(e.target.value)}
-                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-crimson-700"
+                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-400"
                   />
                 </div>
 
@@ -156,7 +156,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                   <select
                     value={cycle}
                     onChange={(e) => setCycle(e.target.value as any)}
-                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-crimson-700"
+                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-400"
                   >
                     <option value="Leaving Certificate">Leaving Certificate (6th Year)</option>
                     <option value="5th Year">5th Year</option>
@@ -176,7 +176,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     placeholder="e.g. Mark O'Connor"
                     value={parentName}
                     onChange={(e) => setParentName(e.target.value)}
-                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-crimson-700"
+                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-400"
                   />
                 </div>
 
@@ -190,7 +190,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     placeholder="e.g. 087 1234567"
                     value={parentPhone}
                     onChange={(e) => setParentPhone(e.target.value)}
-                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-crimson-700"
+                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-400"
                   />
                 </div>
               </div>
@@ -205,7 +205,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     placeholder="e.g. mark@example.com"
                     value={parentEmail}
                     onChange={(e) => setParentEmail(e.target.value)}
-                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-crimson-700"
+                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-400"
                   />
                 </div>
 
@@ -218,7 +218,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     placeholder="e.g. Lucan CC / Salesian Celbridge"
                     value={currentSchool}
                     onChange={(e) => setCurrentSchool(e.target.value)}
-                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-crimson-700"
+                    className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-400"
                   />
                 </div>
               </div>
@@ -228,7 +228,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                   type="button"
                   disabled={!studentName.trim() || !parentName.trim() || !parentPhone.trim()}
                   onClick={() => setStep(2)}
-                  className="px-6 py-3 text-sm font-bold text-white bg-crimson-800 hover:bg-crimson-900 rounded-full shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                  className="px-6 py-3 text-sm font-bold text-white bg-peach-400 hover:bg-peach-300 text-night-950 rounded-full shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                 >
                   <span>Select Subjects & Slots</span>
                   <ArrowRight className="w-4 h-4" />
@@ -269,13 +269,13 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                       onClick={() => toggleSlot(slot.id)}
                       className={`p-3.5 rounded-2xl border text-xs cursor-pointer transition-all flex items-center justify-between ${
                         isChecked
-                          ? 'border-crimson-700 bg-crimson-50/60 ring-1 ring-crimson-700'
+                          ? 'border-peach-400 bg-peach-50/60 ring-1 ring-peach-400'
                           : 'border-slate-200 hover:border-slate-300 bg-white'
                       }`}
                     >
                       <div className="flex items-start gap-3">
                         <div className={`w-5 h-5 rounded-lg border mt-0.5 flex items-center justify-center ${
-                          isChecked ? 'bg-crimson-800 border-crimson-800 text-white' : 'border-slate-300'
+                          isChecked ? 'bg-peach-500 border-peach-500 text-white' : 'border-slate-300'
                         }`}>
                           {isChecked && <Check className="w-3.5 h-3.5" />}
                         </div>
@@ -301,12 +301,12 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
               </div>
 
               {/* Fee and Bundle summary */}
-              <div className="p-4 bg-crimson-950 text-white rounded-2xl flex items-center justify-between">
+              <div className="p-4 bg-night-950 text-white rounded-2xl flex items-center justify-between">
                 <div>
-                  <span className="text-xs text-crimson-300 block font-medium">Calculated Weekly Tuition:</span>
+                  <span className="text-xs text-stone-400 block font-medium">Calculated Weekly Tuition:</span>
                   <div className="flex items-baseline gap-1.5">
                     <span className="text-2xl font-extrabold text-amber-300 font-mono">€{weeklyTotal}</span>
-                    <span className="text-xs text-crimson-100">/ week</span>
+                    <span className="text-xs text-stone-300">/ week</span>
                   </div>
                 </div>
 
@@ -332,7 +332,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                   type="button"
                   disabled={selectedSlotIds.length === 0 || scheduleClashes.length > 0 || isSubmitting}
                   onClick={handleSubmitBooking}
-                  className="px-6 py-3 text-sm font-bold text-white bg-crimson-800 hover:bg-crimson-900 rounded-full shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                  className="px-6 py-3 text-sm font-bold text-white bg-peach-400 hover:bg-peach-300 text-night-950 rounded-full shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                 >
                   <span>{isSubmitting ? 'Reserving...' : 'Confirm & Reserve Seat'}</span>
                   <ArrowRight className="w-4 h-4" />
@@ -344,19 +344,19 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
           {/* STEP 3: Booking Confirmed & WhatsApp Dispatch */}
           {step === 3 && (
             <div className="text-center py-4 space-y-6">
-              <div className="w-16 h-16 rounded-full bg-crimson-100 text-crimson-700 flex items-center justify-center mx-auto shadow-inner">
+              <div className="w-16 h-16 rounded-full bg-peach-100 text-peach-600 flex items-center justify-center mx-auto shadow-inner">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
 
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-crimson-800 block mb-1">
+                <span className="text-xs font-bold uppercase tracking-wider text-peach-700 block mb-1">
                   Enrolment Request Registered
                 </span>
                 <h4 className="text-2xl font-extrabold text-slate-900 mb-2">
                   Thank You, {parentName}!
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-                  Your seat reservation request for <strong className="text-slate-900">{studentName}</strong> has been logged under Reference ID: <span className="font-mono font-bold text-crimson-800">{submittedBookingId}</span>.
+                  Your seat reservation request for <strong className="text-slate-900">{studentName}</strong> has been logged under Reference ID: <span className="font-mono font-bold text-peach-600">{submittedBookingId}</span>.
                 </p>
               </div>
 

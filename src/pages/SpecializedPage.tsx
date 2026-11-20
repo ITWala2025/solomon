@@ -55,7 +55,7 @@ export const SpecializedPage: React.FC<SpecializedPageProps> = ({ onOpenEnrolmen
 
             {/* Oral Language Prep Details */}
             <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200">
-              <span className="text-xs font-bold uppercase tracking-wider text-crimson-800 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-olive-700 block mb-1">
                 40% Oral Examination Intensive
               </span>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Oral Language Fluency Coaching</h3>

@@ -8,8 +8,8 @@ export const FacultyShowcase: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider mb-3">
-            <Award className="w-3.5 h-3.5 text-amber-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-3">
+            <Award className="w-3.5 h-3.5 text-peach-600" />
             Dedicated Educators
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -25,7 +25,7 @@ export const FacultyShowcase: React.FC = () => {
           {TEACHERS.map((teacher) => (
             <div
               key={teacher.id}
-              className="bg-white rounded-3xl border border-slate-200 p-7 shadow-sm hover:shadow-card hover:border-crimson-600/40 transition-all flex flex-col justify-between group"
+              className="bg-white rounded-3xl border border-slate-200 p-7 shadow-sm hover:shadow-card hover:border-peach-400/60 transition-all flex flex-col justify-between group"
             >
               <div>
                 {/* Avatar and Examiner Pill */}
@@ -33,10 +33,10 @@ export const FacultyShowcase: React.FC = () => {
                   <img
                     src={teacher.avatarUrl}
                     alt={teacher.fullName}
-                    className="w-16 h-16 rounded-2xl object-cover border-2 border-crimson-800/30 group-hover:border-crimson-700 transition-colors shadow-sm"
+                    className="w-16 h-16 rounded-2xl object-cover border-2 border-peach-400/30 group-hover:border-peach-400 transition-colors shadow-sm"
                   />
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-crimson-800 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-peach-600 transition-colors">
                       {teacher.fullName}
                     </h3>
                     <p className="text-xs text-slate-500 font-medium">{teacher.role}</p>
@@ -62,7 +62,7 @@ export const FacultyShowcase: React.FC = () => {
                   {teacher.subjects.map((subj, idx) => (
                     <span
                       key={idx}
-                      className="text-xs font-semibold px-2.5 py-1 rounded-full bg-crimson-50 text-crimson-800 border border-crimson-200/60"
+                      className="text-xs font-semibold px-2.5 py-1 rounded-full bg-peach-50 text-peach-800 border border-peach-200/60"
                     >
                       {subj}
                     </span>

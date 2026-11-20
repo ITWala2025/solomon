@@ -7,8 +7,8 @@ export const DifferenceSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson-100 text-crimson-900 text-xs font-bold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-crimson-700" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-peach-100 text-peach-900 text-xs font-bold uppercase tracking-wider mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-peach-600" />
             The Solomon Grinds Advantage
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -83,67 +83,67 @@ export const DifferenceSection: React.FC = () => {
           </div>
 
           {/* Winner: Solomon Grinds */}
-          <div className="bg-gradient-to-b from-crimson-900 to-crimson-950 text-white rounded-3xl p-8 border-2 border-crimson-700 shadow-xl flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-amber-400 text-crimson-950 text-xs font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl">
+          <div className="bg-gradient-to-b from-night-900 to-night-950 text-white rounded-3xl p-8 border-2 border-peach-400/60 shadow-xl flex flex-col justify-between relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-peach-400 text-night-950 text-xs font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl">
               The Solomon Standard
             </div>
 
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
                 <div>
-                  <span className="text-xs font-bold text-amber-300 uppercase tracking-widest">Our Promise</span>
+                  <span className="text-xs font-bold text-peach-300 uppercase tracking-widest">Our Promise</span>
                   <h3 className="text-2xl font-extrabold text-white">The Solomon Grinds Difference</h3>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-peach-400/20 text-peach-300 flex items-center justify-center">
                   <Check className="w-6 h-6" />
                 </div>
               </div>
 
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-peach-400/20 text-peach-300 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">Strictly Capped Small Cohorts (6–10 Students)</strong>
-                    <span className="text-xs text-crimson-100">Intimate class environment where the teacher knows your student and diagnoses weaknesses.</span>
+                    <span className="text-xs text-stone-300">Intimate class environment where the teacher knows your student and diagnoses weaknesses.</span>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-peach-400/20 text-peach-300 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">100% Active or Past SEC Examiners</strong>
-                    <span className="text-xs text-crimson-100">Teaching marking scheme nuances, exact keyword mark allocations, and exam time-management.</span>
+                    <span className="text-xs text-stone-300">Teaching marking scheme nuances, exact keyword mark allocations, and exam time-management.</span>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-peach-400/20 text-peach-300 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">Safe, Convenient Suburban Location</strong>
-                    <span className="text-xs text-crimson-100">Scoil Áine Naofa, Newcastle Road, Lucan (opposite SuperValu). Free on-site parking and bus links.</span>
+                    <span className="text-xs text-stone-300">Scoil Áine Naofa, Newcastle Road, Lucan (opposite SuperValu). Free on-site parking and bus links.</span>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-peach-400/20 text-peach-300 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 font-bold" />
                   </div>
                   <div>
                     <strong className="text-white text-sm font-bold block">Flexible €20 Pay-As-You-Go with Multi-Subject Savings</strong>
-                    <span className="text-xs text-crimson-100">Pay weekly with total peace of mind. 2 subjects = €38/wk; 3 subjects = €55/wk (save €150/year).</span>
+                    <span className="text-xs text-stone-300">Pay weekly with total peace of mind. 2 subjects = €38/wk; 3 subjects = €55/wk (save €150/year).</span>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300 font-semibold">
-              <HeartHandshake className="w-4 h-4 text-amber-400" />
+            <div className="mt-8 pt-4 border-t border-white/10 flex items-center gap-2 text-xs text-peach-300 font-semibold">
+              <HeartHandshake className="w-4 h-4 text-peach-400" />
               <span>Proven track record of top CAO points and H1/H2 results for over 25 years.</span>
             </div>
           </div>

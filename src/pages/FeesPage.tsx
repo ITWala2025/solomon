@@ -55,24 +55,24 @@ export const FeesPage: React.FC<FeesPageProps> = ({ onSelectBundle, onOpenEnrolm
                   <td className="py-4 px-6 font-semibold text-slate-900">2 Subjects Bundle</td>
                   <td className="py-4 px-6 font-mono font-bold text-slate-900">€38.00 / wk</td>
                   <td className="py-4 px-6 text-slate-500">€19.00 / class</td>
-                  <td className="py-4 px-6 text-right font-bold text-emerald-700">Save €60.00 / year</td>
+                  <td className="py-4 px-6 text-right font-bold text-olive-600">Save €60.00 / year</td>
                 </tr>
                 <tr className="bg-amber-50/60 hover:bg-amber-50">
-                  <td className="py-4 px-6 font-bold text-crimson-950 flex items-center gap-2">
+                  <td className="py-4 px-6 font-bold text-peach-900 flex items-center gap-2">
                     <span>3 Subjects Bundle</span>
-                    <span className="text-[10px] font-extrabold bg-amber-400 text-crimson-950 px-2 py-0.5 rounded-full uppercase">
+                    <span className="text-[10px] font-extrabold bg-peach-400 text-night-950 px-2 py-0.5 rounded-full uppercase">
                       Most Popular
                     </span>
                   </td>
-                  <td className="py-4 px-6 font-mono font-extrabold text-crimson-900">€55.00 / wk</td>
+                  <td className="py-4 px-6 font-mono font-extrabold text-peach-700">€55.00 / wk</td>
                   <td className="py-4 px-6 text-slate-600 font-semibold">€18.33 / class</td>
-                  <td className="py-4 px-6 text-right font-extrabold text-emerald-700">Save €150.00 / year</td>
+                  <td className="py-4 px-6 text-right font-extrabold text-olive-600">Save €150.00 / year</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
                   <td className="py-4 px-6 font-semibold text-slate-900">4 Subjects Bundle</td>
                   <td className="py-4 px-6 font-mono font-bold text-slate-900">€72.00 / wk</td>
                   <td className="py-4 px-6 text-slate-500">€18.00 / class</td>
-                  <td className="py-4 px-6 text-right font-bold text-emerald-700">Save €240.00 / year</td>
+                  <td className="py-4 px-6 text-right font-bold text-olive-600">Save €240.00 / year</td>
                 </tr>
               </tbody>
             </table>
@@ -80,12 +80,12 @@ export const FeesPage: React.FC<FeesPageProps> = ({ onSelectBundle, onOpenEnrolm
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+              <ShieldCheck className="w-5 h-5 text-olive-500 flex-shrink-0" />
               <span>Concession available: <strong>10% sibling discount</strong> applied when brothers/sisters attend together.</span>
             </div>
             <button
               onClick={onOpenEnrolment}
-              className="px-5 py-2.5 font-bold text-white bg-crimson-800 hover:bg-crimson-900 rounded-full flex-shrink-0"
+              className="px-5 py-2.5 font-bold text-night-950 bg-peach-400 hover:bg-peach-500 rounded-full flex-shrink-0"
             >
               Enrol With Bundle
             </button>

@@ -24,7 +24,7 @@ export const LocationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-7 rounded-3xl bg-slate-50 border border-slate-200">
-              <Car className="w-7 h-7 text-crimson-800 mb-3" />
+              <Car className="w-7 h-7 text-peach-600 mb-3" />
               <h4 className="text-base font-bold text-slate-900 mb-2">Driving from North Kildare</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
                 From Celbridge, take the R405 directly onto the Newcastle Road (10 mins). From Leixlip, cross Salmon Leap bridge onto the N4 Lucan bypass (8 mins). Free drop-off parking inside school grounds.
@@ -32,7 +32,7 @@ export const LocationPage: React.FC = () => {
             </div>
 
             <div className="p-7 rounded-3xl bg-slate-50 border border-slate-200">
-              <Bus className="w-7 h-7 text-emerald-600 mb-3" />
+              <Bus className="w-7 h-7 text-olive-600 mb-3" />
               <h4 className="text-base font-bold text-slate-900 mb-2">Dublin Bus C-Spine Access</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
                 Directly served by high-frequency spine routes <strong>C1, C2, and C4</strong> operating between Adamstown, Lucan, and city centre, plus local orbital routes <strong>L51, L52, and L53</strong>.

@@ -29,7 +29,7 @@ export const HeaderPill: React.FC<HeaderPillProps> = ({ onOpenEnrolment }) => {
   // Streamlined primary items (clean, uncluttered pill design)
   const primaryNavItems = [
     { label: 'Home', path: '/' },
-    { label: 'Our Difference', path: '/our-difference' },
+    { label: 'About', path: '/about' },
     { label: 'Timetable', path: '/timetable' },
     { label: 'Fees', path: '/fees' },
     { label: 'Contact', path: '/contact' },
@@ -126,18 +126,6 @@ export const HeaderPill: React.FC<HeaderPillProps> = ({ onOpenEnrolment }) => {
 
           {/* Right Action Buttons */}
           <div className="flex items-center gap-2">
-            {/* Quick WhatsApp Pill */}
-            <a
-              href="https://wa.me/353872745234?text=Hi%20Caitriona,%20I'm%20interested%20in%20grinds%20at%20Solomon%20Grinds%20Lucan."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-night-900 bg-olive-100 hover:bg-olive-200 border border-olive-300 transition-all"
-              title="Message Caitriona on WhatsApp"
-            >
-              <MessageSquare className="w-3.5 h-3.5 text-olive-700" />
-              <span className="hidden lg:inline">WhatsApp</span>
-            </a>
-
             {/* Quick Call Pill */}
             <a
               href="tel:016284171"

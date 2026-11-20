@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
               Explore Pages
             </h4>
             <ul className="space-y-2 text-xs text-stone-300">
-              <li><Link to="/our-difference" className="hover:text-peach-400 transition">Our Difference vs City Centre</Link></li>
+              <li><Link to="/about" className="hover:text-peach-400 transition">About The Solomon Grinds Difference</Link></li>
               <li><Link to="/timetable" className="hover:text-peach-400 transition">Timetable & Subjects</Link></li>
               <li><Link to="/fees" className="hover:text-peach-400 transition">Fees & Bundle Calculator</Link></li>
               <li><Link to="/faculty" className="hover:text-peach-400 transition">Examiner Teaching Staff</Link></li>

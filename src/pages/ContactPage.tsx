@@ -27,7 +27,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnrolment }) => 
             {/* Phone */}
             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 text-center flex flex-col items-center justify-between">
               <div>
-                <div className="w-14 h-14 rounded-full bg-crimson-100 text-crimson-800 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-full bg-peach-100 text-peach-700 flex items-center justify-center mb-4">
                   <Phone className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Telephone Enquiries</h3>
@@ -82,16 +82,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenEnrolment }) => 
           </div>
 
           {/* Enrolment Trigger Card */}
-          <div className="bg-gradient-to-r from-crimson-950 via-crimson-900 to-crimson-850 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="bg-gradient-to-r from-night-950 via-night-900 to-night-850 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl sm:text-3xl font-extrabold mb-2">Ready to Secure Your Place?</h3>
-              <p className="text-xs sm:text-sm text-crimson-100 max-w-xl leading-relaxed">
+              <p className="text-xs sm:text-sm text-stone-300 max-w-xl leading-relaxed">
                 Use our 3-step online enrolment wizard to select subjects, preview your weekly fee with bundle discounts, and fast-track registration.
               </p>
             </div>
             <button
               onClick={onOpenEnrolment}
-              className="px-8 py-3.5 text-sm font-bold text-crimson-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-all shadow-md flex-shrink-0"
+              className="px-8 py-3.5 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-300 rounded-full transition-all shadow-md flex-shrink-0"
             >
               Open Enrolment Form
             </button>

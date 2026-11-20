@@ -8,11 +8,11 @@ export const TestimonialsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-olive-100 text-olive-900 text-xs font-bold uppercase tracking-wider mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-olive-600" />
             Verified Results
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-900 tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
             Hear From Local Lucan, Celbridge & Leixlip Families
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -35,7 +35,7 @@ export const TestimonialsSection: React.FC = () => {
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-slate-300" />
+                  <Quote className="w-8 h-8 text-peach-200" />
                 </div>
 
                 {/* Quote body */}
@@ -46,8 +46,8 @@ export const TestimonialsSection: React.FC = () => {
 
               <div>
                 {/* Achievement Highlight */}
-                <div className="p-3 bg-emerald-50 border border-emerald-200/80 rounded-xl mb-4 text-xs font-semibold text-emerald-900 flex items-start gap-2">
-                  <Award className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div className="p-3 bg-olive-50 border border-olive-200/80 rounded-xl mb-4 text-xs font-semibold text-olive-900 flex items-start gap-2">
+                  <Award className="w-4 h-4 text-olive-600 flex-shrink-0 mt-0.5" />
                   <span>{testimonial.achievement}</span>
                 </div>
 
@@ -57,7 +57,7 @@ export const TestimonialsSection: React.FC = () => {
                     <strong className="text-slate-900 font-bold block">{testimonial.name}</strong>
                     <span className="text-slate-500">{testimonial.role} • {testimonial.location}</span>
                   </div>
-                  <span className="text-[11px] font-semibold text-brand-800 bg-brand-100 px-2 py-0.5 rounded-full">
+                  <span className="text-[11px] font-semibold text-peach-800 bg-peach-50 px-2 py-0.5 rounded-full border border-peach-200">
                     {testimonial.cycle}
                   </span>
                 </div>

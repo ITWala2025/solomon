@@ -9,7 +9,8 @@ import { ScrollToTop } from './components/ScrollToTop';
 
 // Dedicated Pages
 import { HomePage } from './pages/HomePage';
-import { DifferencePage } from './pages/DifferencePage';
+import { AboutPage } from './pages/AboutPage';
+import { StickyWhatsApp } from './components/StickyWhatsApp';
 import { TimetablePage } from './pages/TimetablePage';
 import { FeesPage } from './pages/FeesPage';
 import { FacultyPage } from './pages/FacultyPage';
@@ -43,7 +44,7 @@ export function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-slate-50 flex flex-col text-slate-900 selection:bg-crimson-800 selection:text-white">
+      <div className="min-h-screen bg-slate-50 flex flex-col text-slate-900 selection:bg-peach-500 selection:text-white">
         {/* Enterprise Floating Pill Header */}
         <HeaderPill onOpenEnrolment={handleOpenEnrolment} />
 
@@ -61,8 +62,8 @@ export function App() {
               }
             />
             <Route
-              path="/our-difference"
-              element={<DifferencePage onOpenEnrolment={handleOpenEnrolment} />}
+              path="/about"
+              element={<AboutPage onOpenEnrolment={handleOpenEnrolment} />}
             />
             <Route
               path="/timetable"
@@ -125,6 +126,9 @@ export function App() {
 
         {/* 24/7 AI Admissions Assistant Widget (Solomon Guide) */}
         <SolomonGuideChat />
+
+        {/* Sticky WhatsApp Button */}
+        <StickyWhatsApp />
       </div>
     </BrowserRouter>
   );

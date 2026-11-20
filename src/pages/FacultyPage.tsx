@@ -45,7 +45,7 @@ export const FacultyPage: React.FC<FacultyPageProps> = ({ onOpenEnrolment }) => 
             </div>
 
             <div className="p-7 rounded-3xl bg-slate-50 border border-slate-200">
-              <BookOpen className="w-8 h-8 text-crimson-700 mb-4" />
+              <BookOpen className="w-8 h-8 text-peach-500 mb-4" />
               <h4 className="text-lg font-bold text-slate-900 mb-2">Partial Credit Mastery</h4>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 In subjects like Higher Maths, Physics, and Accounting, partial credit schemes reward correct methodology even if final arithmetic errs. We teach students how to lay out steps clearly to guarantee maximum points.
@@ -53,7 +53,7 @@ export const FacultyPage: React.FC<FacultyPageProps> = ({ onOpenEnrolment }) => 
             </div>
 
             <div className="p-7 rounded-3xl bg-slate-50 border border-slate-200">
-              <ShieldCheck className="w-8 h-8 text-emerald-600 mb-4" />
+              <ShieldCheck className="w-8 h-8 text-olive-500 mb-4" />
               <h4 className="text-lg font-bold text-slate-900 mb-2">Exam Timing & Stress Relief</h4>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Running out of time on Paper 1 or 2 is the most common reason capable students drop grades. Our examiners drill precise per-question timing schedules so students finish with time to spare.
@@ -64,7 +64,7 @@ export const FacultyPage: React.FC<FacultyPageProps> = ({ onOpenEnrolment }) => 
           <div className="mt-12 text-center">
             <button
               onClick={onOpenEnrolment}
-              className="px-8 py-3.5 text-sm font-bold text-white bg-crimson-800 hover:bg-crimson-900 rounded-full shadow-md transition"
+              className="px-8 py-3.5 text-sm font-bold text-night-950 bg-peach-400 hover:bg-peach-500 rounded-full shadow-md transition"
             >
               Learn with Our Examiners
             </button>
