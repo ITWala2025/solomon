@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrolment }) => {
 
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-night-950 leading-[1.12] mb-4">
-            The Solomon Grinds Difference.
+            The <span className="text-red-700">Solomon Grinds</span> Difference.
             <span className="block mt-1.5 text-white font-extrabold drop-shadow-[0_2px_4px_rgba(20,14,16,0.3)]">
               Small Groups. Individual Attention.
             </span>
@@ -41,8 +41,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrolment }) => {
 
           {/* Supporting Pitch */}
           <p className="text-sm sm:text-base lg:text-lg text-night-950/90 leading-relaxed mb-6 max-w-xl font-medium">
-            Leaving Certificate & Junior Cycle grinds at <strong className="text-night-950 font-extrabold underline decoration-night-950/40 underline-offset-4">Scoil Áine Naofa, Lucan</strong>. 
-            All our dedicated teaching staff are <span className="font-bold text-night-950 bg-white/40 px-2 py-0.5 rounded-md">hand-picked, experienced, and past or present State Examiners</span>.
+            Leaving Certificate & Junior Cycle grinds at <strong className="text-night-950 font-extrabold underline decoration-night-950/40 underline-offset-4">Scoil Áine Naofa, Lucan</strong>.
+            All our dedicated teaching staff are hand-picked, experienced, and past or present State Examiners.
           </p>
 
           {/* CTA Buttons */}

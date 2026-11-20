@@ -54,13 +54,13 @@ export const HeaderPill: React.FC<HeaderPillProps> = ({ onOpenEnrolment }) => {
         >
           {/* Logo Pill */}
           <Link to="/" className="flex items-center gap-1.5 sm:gap-2.5 group flex-shrink-0 min-w-0">
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-night-900 border border-peach-400/40 flex items-center justify-center text-peach-400 shadow-sm group-hover:scale-105 transition-transform flex-shrink-0">
-              <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-peach-400" />
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-red-700 border border-red-800 flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform flex-shrink-0">
+              <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
             </div>
             <div className="flex flex-col min-w-0">
               <div className="flex items-center gap-1 leading-none whitespace-nowrap">
-                <span className="font-extrabold text-sm sm:text-base tracking-tight text-night-950">SOLOMON</span>
-                <span className="font-bold text-sm sm:text-base tracking-tight text-peach-600">GRINDS</span>
+                <span className="font-extrabold text-sm sm:text-base tracking-tight text-red-700">SOLOMON</span>
+                <span className="font-bold text-sm sm:text-base tracking-tight text-red-700">GRINDS</span>
               </div>
               <span className="text-[9px] font-semibold tracking-wider text-stone-500 uppercase leading-none mt-0.5 hidden sm:block">
                 Scoil Áine Naofa • Lucan

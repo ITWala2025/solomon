@@ -10,11 +10,11 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Identity */}
           <div className="space-y-3.5">
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-night-950 border border-peach-400/40 flex items-center justify-center text-peach-400 shadow-sm group-hover:scale-105 transition-transform">
-                <GraduationCap className="w-6 h-6 text-peach-400" />
+              <div className="w-10 h-10 rounded-full bg-red-700 border border-red-800 flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
+                <GraduationCap className="w-6 h-6 text-white" />
               </div>
-              <span className="font-extrabold text-xl tracking-tight text-night-950">
-                SOLOMON <span className="text-white drop-shadow-sm">GRINDS</span>
+              <span className="font-extrabold text-xl tracking-tight text-red-800">
+                SOLOMON <span className="text-red-700 font-bold">GRINDS</span>
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-night-950/85 leading-relaxed font-medium">
