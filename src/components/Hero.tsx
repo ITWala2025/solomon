@@ -32,9 +32,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrolment }) => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-night-950 leading-[1.12] mb-4">
-            The <span className="text-red-700">Solomon Grinds</span> Difference.
-            <span className="block mt-1.5 text-white font-extrabold drop-shadow-[0_2px_4px_rgba(20,14,16,0.3)]">
+          <h1 className="mb-4">
+            <span className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-red-700 leading-tight">
+              Solomon Grinds
+            </span>
+            <span className="block text-lg sm:text-2xl lg:text-3xl font-extrabold text-white drop-shadow-[0_2px_4px_rgba(20,14,16,0.3)] whitespace-nowrap mt-1.5">
               Small Groups. Individual Attention.
             </span>
           </h1>
