@@ -15,7 +15,7 @@ export const SolomonGuideChat: React.FC = () => {
     {
       id: '1',
       sender: 'bot',
-      text: "Dia duit! I'm the Solomon Grinds Digital Guide. How can I help you today? Ask about our Leaving Cert or Junior Cycle grinds, fees, Scoil Áine Naofa location, or examiner teachers.",
+      text: "Dia duit! I'm SoloAI, your Solomon Grinds Digital Guide. How can I help you today? Ask about our Leaving Cert or Junior Cycle grinds, fees, Scoil Áine Naofa location, or examiner teachers.",
       timestamp: 'Just now'
     }
   ]);
@@ -74,12 +74,13 @@ export const SolomonGuideChat: React.FC = () => {
         <button
           onClick={() => setIsOpen(true)}
           className="group flex items-center gap-2.5 px-4 py-3 bg-gradient-to-r from-night-900 to-night-950 border border-peach-400/40 text-white rounded-full shadow-2xl hover:shadow-night-900/40 hover:scale-105 transition-all"
-          aria-label="Open Admissions Assistant"
+          aria-label="Ask SoloAI"
+          title="Ask SoloAI"
         >
           <div className="w-6 h-6 rounded-full bg-peach-400/20 flex items-center justify-center">
             <Bot className="w-4 h-4 text-peach-400" />
           </div>
-          <span className="text-xs font-bold hidden sm:inline">Ask Solomon Guide (AI)</span>
+          <span className="text-xs font-bold hidden sm:inline">Ask SoloAI</span>
           <span className="w-2.5 h-2.5 rounded-full bg-peach-400 animate-ping"></span>
         </button>
       )}
@@ -94,7 +95,7 @@ export const SolomonGuideChat: React.FC = () => {
                 <Bot className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="text-sm font-bold leading-tight">Solomon Guide</h4>
+                <h4 className="text-sm font-bold leading-tight">SoloAI</h4>
                 <span className="text-[10px] text-peach-300 font-medium flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-peach-400 animate-pulse"></span>
                   Admissions AI • Online 24/7
